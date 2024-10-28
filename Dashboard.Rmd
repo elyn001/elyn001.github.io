@@ -1,0 +1,80 @@
+---
+title: "NYC Restaurant Inspection Dashboard"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(plotly)
+library(tidyverse)
+library(flexdashboard)
+library(dplyr)
+library(p8105.datasets)
+```
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Line Plot: Average Inspection Scores by Month and Borough
+
+```{r}
+data("rest_inspec")
+rest_inspec <- 
+  rest_inspec |>
+  select(boro,cuisine_description,inspection_date, score,grade) |>
+  filter(
+    !is.na(grade),
+    cuisine_description %in% c("Italian", "Chinese","Japanese", "American", "Korean", "Mexican", "French", "Spanish", "Thai", "Turkish")
+    ) 
+
+rest_inspec <- rest_inspec |>
+  mutate(year_month = floor_date(inspection_date, "month"))|>
+  filter(boro %in% c("MANHATTAN", "BROOKLYN", "QUEENS", "BRONX", "STATEN ISLAND"))
+
+average_scores <- rest_inspec |>
+  group_by(year_month, boro) |>
+  summarize(avg_score = mean(score, na.rm = TRUE), .groups = 'drop') |>
+  arrange(year_month, boro) |>
+  mutate(text_label = str_c("Borough: ", boro, "<br>", "Average Score: ", round(avg_score, 2)))
+
+  plot_ly(average_scores, x = ~year_month, y = ~avg_score, color = ~boro, type = 'scatter', mode = 'lines+markers', text = ~text_label) |>
+  layout(title = "Average Inspection Scores by Month and Borough",
+         xaxis = list(title = "Inspection Month"),
+         yaxis = list(title = "Average Score"),
+         showlegend = TRUE)
+
+
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Bar Plot: Count of Restaurants by Cuisine Type 
+
+```{r}
+cuisine_count <- rest_inspec |>
+  group_by(cuisine_description) |>
+  summarize(count = n()) |>
+  mutate(cuisine_description = fct_reorder(cuisine_description, count))
+
+plot_ly(cuisine_count, x = ~cuisine_description, y = ~count,
+        color = ~cuisine_description, type = 'bar',colors = "viridis")|>
+  layout(title = "Number of Restaurants by Cuisine Type in Manhattan",
+         xaxis = list(title = "Cuisine Type"),
+         yaxis = list(title = "Number of Restaurants"))
+
+```
+
+### Box Plot: Inspection Scores Distribution by Cuisine Type in Manhattan
+
+```{r}
+rest_inspec |>
+  filter(boro == "MANHATTAN") |>
+  mutate(cuisine_description = fct_reorder(cuisine_description, score)) |>
+  plot_ly(y = ~score, x = ~cuisine_description, type = 'box', color = ~cuisine_description, colors = "viridis") |>
+  layout(title = "Inspection Scores Distribution by Cuisine Type",
+         xaxis = list(title = "Cuisine Type"),
+         yaxis = list(title = "Inspection Score"))
+```
