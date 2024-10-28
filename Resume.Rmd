@@ -10,15 +10,6 @@ output:
 - **Name:** Yining Cao <br>
 - **Email:** yc4588@cumc.columbia.edu
 
-## Education
-
-- **Columbia University**, Mailman School of Public Health, New York, NY
-  - Master of Science in Biostatistics
-  - Expected Graduation: May 2026
-- **Harbin Medical University**, Harbin, China
-  - Bachelor of Engineering in Biomedical Engineering
-  - Graduated: June 2023
-  
 ## Research Experience
 
 - **Statistical Data Science for Public Health and Biomedicine** | 05/2023-07/2023
@@ -29,9 +20,3 @@ output:
 
 - **“Healthy Smart Home” - A Health Smart Home for the Elderly** | 09/2020 – 06/2021
 - Objective: Designed a platform for building a new type of healthy smart home for the elderly during the COVID-19 pandemic based on smartphone or tablet applications
-
-
-## Skills
-
-- **Programming**: R, Python, MATLB
-- **Languages**: English, Chinese
