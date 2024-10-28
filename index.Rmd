@@ -8,12 +8,12 @@ output:
 ---
 ### Welcome to my website!
 
-My name is Yining Cao. I am a graduate student at Columbia University Mailman School majoring in Biostatistics. This website is created for the course P8105.
+My name is Yining Cao. I am a graduate student at Columbia University Mailman School majoring in Biostatistics.
 
 
 ### About me 
 
-My academic and professional experience can be found [here](resume.html).
+My academic and professional experience can be found [here](Resume.html).
 
 ### NYC Restaurant Inspection Dashboard
 
