@@ -4,7 +4,7 @@ navbar:
   title: "Home"
   right:
     - text: "About me"
-      href: remume.html
+      href: Remume.html
     - text: "NYC Restaurant Inspection Dashboard"
       href: Dashboard.html
     - icon: fa-envelope fa-lg
