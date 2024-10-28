@@ -1,0 +1,20 @@
+---
+title: "Yining Cao's website"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    theme: cerulean
+---
+### Welcome to my website!
+
+My name is Yining Cao. I am a graduate student at Columbia University Mailman School majoring in Biostatistics. This website is created for the course P8105.
+
+
+### About me 
+
+My academic and professional experience can be found [here](resume.html).
+
+### NYC Restaurant Inspection Dashboard
+
+These three plots are created using the NYC Restaurant Inspection dataset: [NYC Restaurant Inspection Dashboard](Dashboard.html).
