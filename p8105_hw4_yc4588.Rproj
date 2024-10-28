@@ -11,3 +11,6 @@ Encoding: UTF-8
 
 RnwWeave: Sweave
 LaTeX: pdfLaTeX
+
+BuildType: Website
+WebsitePath: ~/Desktop/24F-P8105/p8105_hw4_yc4588
