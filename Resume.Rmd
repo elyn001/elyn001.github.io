@@ -10,14 +10,6 @@ output:
 - **Name:** Yining Cao <br>
 - **Email:** yc4588@cumc.columbia.edu
 
-## Education
-
-- **Columbia University**, Mailman School of Public Health, New York, NY
-  - Master of Science in Biostatistics
-  - Expected Graduation: May 2026
-- **Harbin Medical University**, Harbin, China
-  - Bachelor of Engineering in Biomedical Engineering
-  - Graduated: June 2023
   
 ## Research Experience
 
