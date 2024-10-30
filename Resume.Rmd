@@ -5,13 +5,12 @@ output:
     toc: true
     toc_float: true
 ---
-
-## Personal information
 - **Name:** Yining Cao <br>
 - **Email:** yc4588@cumc.columbia.edu
-
+- **Columbia University**, Mailman School of Public Health, New York, NY
+  - Master of Science in Biostatistics
   
-## Research Experience
+### Research Experience
 
 - **Statistical Data Science for Public Health and Biomedicine** | 05/2023-07/2023
 - Objective: Explored the impact of various factors on uterine corpus endometrial carcinoma
@@ -23,7 +22,7 @@ output:
 - Objective: Designed a platform for building a new type of healthy smart home for the elderly during the COVID-19 pandemic based on smartphone or tablet applications
 
 
-## Skills
+### Skills
 
 - **Programming**: R, Python, MATLB
 - **Languages**: English, Chinese
