@@ -12,13 +12,13 @@ output:
   
 ### Research Experience
 
-- **Statistical Data Science for Public Health and Biomedicine** | 05/2023-07/2023
+- **Statistical Data Science for Public Health and Biomedicine** | 05/2023~07/2023
 - Objective: Explored the impact of various factors on uterine corpus endometrial carcinoma
 
-- **Structure Prediction and Functional Characterization of ncRNA** | 09/2022-06/2023
+- **Structure Prediction and Functional Characterization of ncRNA** | 09/2022~06/2023
 - Objective: Explored the relevance of the secondary and tertiary structural characteristics of ncRNAs associated with malignant tumors to the immunity and expression and predicted their functions
 
-- **“Healthy Smart Home” - A Health Smart Home for the Elderly** | 09/2020 – 06/2021
+- **“Healthy Smart Home” - A Health Smart Home for the Elderly** | 09/2020~06/2021
 - Objective: Designed a platform for building a new type of healthy smart home for the elderly during the COVID-19 pandemic based on smartphone or tablet applications
 
 
